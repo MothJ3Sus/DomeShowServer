@@ -1,4 +1,7 @@
 from flask import Flask, render_template, redirect, request
+from dotenv import load_dotenv
+import os
+load_dotenv()
 
 app = Flask('app')
 totalData = {}
@@ -28,4 +31,4 @@ def readDataUnityRun():
   return totalData
     
 
-app.run(host='0.0.0.0', port=8080)
+app.run(host='0.0.0.0', port=os.environ.get('PORT', 8080))
