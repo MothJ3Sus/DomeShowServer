@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>replit</title>
+  </head>
+
+  <body>
+    <form action="/Thank-You" method="POST" id="dataForm">
+      <script src="{{ url_for('static', filename='index.js') }}"></script>
+      <label for="name">Soldier's Name:  </label>
+      <input type="text" id="name" name="name" required>
+
+      <br>
+      <br>
+
+      <label for="colour">Soldier's Colour:  </label>
+      <input type="color" id="colour" name="colour" required>
+
+      <br>
+      <br>
+
+      <label for="weapon">Soldier's Weapon:  </label>
+
+      <select name="weapon" id="weapon">
+        <option value="axe">Battle Axe</option>
+        <option value="bow">Bow</option>
+        <option value="cannon">Cannon</option>
+        <option value="mace">Mace</option>
+        <option value="sword">Sword</option>
+      </select>
+
+      <br>
+      <br>
+
+      <!-- <input type="submit" value="submit" id="submitButton" onClick="saveDataLocal()"> -->
+      <input type='submit'value="submit" />
+    </form>
+
+    <br>
+    <br>
+
+    <p id="Warning"></p>
+  </body>
+</html>
