@@ -23,6 +23,7 @@ def thankRun():
   req = request.form
   if req["name"] == "DeleteData":
     totalData = {}
+    counter = 0
   
   else: 
     totalData[counter] = req
