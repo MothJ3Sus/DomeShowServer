@@ -9,6 +9,8 @@ function saveDataLocal()
     {
       sessionStorage.setItem(dataName[i], document.getElementById(dataName[i]).value);
     }
+
+    Console.Log(sessionStorage.getItem("name"))
   }
 
   else
