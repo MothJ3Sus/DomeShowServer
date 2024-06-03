@@ -21,8 +21,12 @@ def thankRun():
     return redirect('/')
 
   req = request.form
-  counter += 1
-  totalData[counter] = req
+  if req["name"] == "DeleteData":
+    totalData = {}
+  
+  else: 
+    totalData[counter] = req
+    counter += 1
   
   return render_template("thank.html", data=req)
 
